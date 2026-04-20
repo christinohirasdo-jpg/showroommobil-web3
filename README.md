@@ -1,65 +1,65 @@
-# 🚗 Showroom Mobil - Soroban Smart Contract
+# 🚗 Car Showroom - Soroban Smart Contract
 
-## 📌 Deskripsi
-Aplikasi ini adalah smart contract berbasis **Soroban (Stellar)** yang digunakan untuk mengelola data showroom mobil.  
-Pengguna dapat menambahkan, melihat, dan menghapus data mobil secara terdesentralisasi.
-
----
-
-## ⚙️ Fitur Utama
-- ➕ Menambahkan data mobil
-- 📋 Melihat daftar mobil
-- ❌ Menghapus data mobil
+## 📌 Description
+This project is a **Soroban (Stellar) smart contract** used to manage car showroom data.  
+Users can add, view, and delete car data in a decentralized way.
 
 ---
 
-## 🧱 Struktur Data
-
-Setiap mobil memiliki atribut sebagai berikut:
-
-- `id` → ID unik mobil  
-- `brand` → Merk mobil (contoh: Toyota, Honda)  
-- `model` → Tipe mobil (contoh: Avanza, Civic)  
-- `price` → Harga mobil  
+## ⚙️ Main Features
+- ➕ Add new car data
+- 📋 View list of cars
+- ❌ Delete car data
 
 ---
 
-## 🛠️ Fungsi yang Tersedia
+## 🧱 Data Structure
+
+Each car has the following attributes:
+
+- `id` → Unique car ID  
+- `brand` → Car brand (e.g., Toyota, Honda)  
+- `model` → Car model (e.g., Avanza, Civic)  
+- `price` → Car price  
+
+---
+
+## 🛠️ Available Functions
 
 ### 1. get_cars()
-Mengambil seluruh data mobil yang tersimpan di blockchain.
+Retrieve all car data stored on the blockchain.
+
+---
 
 ### 2. add_car(brand, model, price)
-Menambahkan mobil baru ke dalam showroom.
+Add a new car to the showroom.
 
-**Parameter:**
+**Parameters:**
 - `brand` (String)
 - `model` (String)
 - `price` (u64)
 
-**Return:**
-- Pesan sukses
+**Returns:**
+- Success message
 
 ---
 
 ### 3. delete_car(id)
-Menghapus mobil berdasarkan ID.
+Delete a car based on its ID.
 
-**Parameter:**
+**Parameters:**
 - `id` (u64)
 
-**Return:**
-- Pesan berhasil / gagal
+**Returns:**
+- Success or failure message
 
 ---
 
-## 🧪 Cara Menjalankan
+## 🧪 How to Run
 
 ### 1. Install Soroban CLI
-Pastikan sudah install Rust dan Soroban CLI.
+Make sure you have Rust and Soroban CLI installed.
 
-### 2. Compile Project
+### 2. Build the Project
 ```bash
 cargo build --target wasm32-unknown-unknown --release
-
-ID smart contract = CBBC47FVO2LI6DEQWJMMJLXZAPSPEYZ36CQEWRRUK4QJHLT3JA2RUCFZ
