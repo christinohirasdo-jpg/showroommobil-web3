@@ -63,3 +63,5 @@ Make sure you have Rust and Soroban CLI installed.
 ### 2. Build the Project
 ```bash
 cargo build --target wasm32-unknown-unknown --release
+
+id smart contract = CCIFQHNPSU7P2XPX5N6LM57VZ2ADOKSYLHXN76BXBQMZPZWDPPBNHCPE
